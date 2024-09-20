@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Imtihon Dom-2</title>
+</head>
+
+<body class="mx-auto relative transition-all duration-500 ease-in-out">
+    <div class=" mt-5 flex justify-between w-full max-w-[1440px] mx-auto">
+        <div>
+            <select>
+                <option value="UZ">UZ</option>
+                <option value="RU">RU</option>
+                <option value="ENG">ENG</option>
+            </select>
+            <select>
+                <option value="UZS">UZS</option>
+                <option value="RUB">RUB</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div class="flex  gap-3 items-center">
+            <button><i class="fa-regular fa-user"></i> My profile</button>
+            <button class="btn-shop relative"><i class="fa-solid fa-cart-shopping"></i> <span
+                    class="absolute top-[2px] right-0 bg-red-300 w-[7px] h-[7px] flex justify-center items-center text-[5px] text-white rounded-full outline outline-1 shop-len">4</span></button>
+            <div class="bg-gray-100 border  flex justify-between">
+                <input type="text"
+                    class="pl-1 bg-transparent w-[90%] placeholder:text-gray-400 font-semibold placeholder:font-normal text-gray-600 outline-none"
+                    placeholder="Search...">
+                <button class="w-[10%]"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="flex justify-between w-full items-end max-w-[1440px] mt-5 mx-auto">
+            <div class="w-full flex items-center gap-2 font-bold">
+                <img src="./imagies/Icon.png" alt="logo">
+                <h1>E-Comm</h1>
+            </div>
+            <ul class="flex w-full justify-evenly font-bold">
+                <li class="hover:text-blue-300">HOME</li>
+                <li class="hover:text-blue-300">BAGS</li>
+                <li class="hover:text-blue-300">SNEAKERS</li>
+                <li class="hover:text-blue-300">BELT</li>
+                <li class="hover:text-blue-300">CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="w-full  max-w-[1440px] mx-auto flex flex-col gap-4 mt-4">
+        <section>
+            <div class="relative w-full h-[80vh] overflow-hidden">
+                <div class="carousel-slide active absolute inset-0 transition-opacity duration-1000">
+                    <img src="https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Slide 1" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+                    <img src="https://images.pexels.com/photos/1485894/pexels-photo-1485894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Slide 2" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+                    <img src="https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Slide 3" class="w-full h-full object-cover">
+                </div>
+
+                <button
+                    class="prev-btn absolute z-50 top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-white px-4 py-2 text-lg rounded-full hover:bg-gray-500">
+                    ❮
+                </button>
+                <button
+                    class="next-btn absolute z-50 top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-white px-4 py-2 text-lg rounded-full hover:bg-gray-500">
+                    ❯
+                </button>
+            </div>
+        </section>
+   <section class="relative w-full h-[200px]">
+<div class=" absolute -top-[150px] z-20 left-0 w-full  flex justify-center items-center">
+<div class="relative w-[400px] h-[350px] overflow-hidden bg-[rgba(255,255,255,0.6)]">
+    <h1 class="absolute top-3 left-4 font-bold">FS - QUILTED MAXI CROSS BAG</h1>
+    <img src="./imagies/img_4.png" class="w-full min-h-full" alt="">
+    <p class="absolute bottom-8 left-[45px]">$534,33
+<span class="text-red-500 font-bold">24% Off</span></p>
+<p class="absolute bottom-3 right-4 text-4xl font-bold text-blue-400 font-serif">$299,43</p>
+</div>
+<div class="relative w-[400px] h-[350px] overflow-hidden bg-[rgba(255,255,255,0.6)]">
+    <h1 class="absolute top-3 left-4 font-bold">FS - QUILTED MAXI CROSS BAG</h1>
+    <img src="./imagies/img_2.png" class="w-full min-h-full" alt="">
+    <p class="absolute bottom-9 left-[45px]">$534,33
+<span class="text-red-500 font-bold">24% Off</span></p>
+
+</div>
+<div class="relative w-[400px] h-[350px] overflow-hidden bg-[rgba(255,255,255,0.6)]">
+    <h1 class="absolute top-3 left-4 font-bold">FS - QUILTED MAXI CROSS BAG</h1>
+    <img src="./imagies/img_3.png" class="w-full min-h-full" alt="">
+    <p class="absolute bottom-7 left-[45px]">$534,33
+<span class="text-red-500 font-bold">24% Off</span></p>
+<p class="absolute bottom-4 right-4 text-4xl font-bold text-blue-400 font-serif">$299,43</p>
+</div>
+</div>
+
+   </section>
+
+<section class="flex w-full justify-center items-center flex-col">
+<h1 class="text-4xl font-bold">BEST SELLER</h1>
+<div class="catagory my-4">
+</div>
+<div class="products gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6"></div>
+</section>
+</main>
+
+    <script type="module" src="./server/main.js"></script>
+</body>
+
+</html>
