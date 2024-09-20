@@ -11,7 +11,7 @@ function renderLocal() {
     let div = document.createElement("div")
     btn.className = "mark absolute top-2  -right-[100px] w-[40px] z-50  bg-[rgba(0,0,0,0.2)] rounded-md py-1 px-1  "
     btn.innerHTML = `<i class="fa-solid fa-xmark"></i>`
-    div.className = "drower absolute w-1/2 top-0 h-screen transition-all duration-500 ease-in-out transform translate-x-[120%] justify-center items-center px-4 overflow-y-scroll overflow-x-auto grid grid-cols-3 gap-3 right-0 bg-[rgba(0,0,0,0.4)] z-40  "
+    div.className = "drower absolute w-1/2 top-0 h-screen transition-all duration-500 ease-in-out transform translate-x-[120%] justify-center items-center px-4 py-4 overflow-y-scroll overflow-x-auto grid grid-cols-3 gap-3 right-0 bg-[rgba(0,0,0,0.4)] z-40  "
   lenData.map((item) => {
     div.innerHTML += `<div data-path='products/${
         item.id
@@ -63,6 +63,16 @@ function renderLocal() {
       </div>
   `;
 });
+let son = lenData.reduce((acc,item)=>{
+    return acc+item.id
+     
+},0)
+div.innerHTML += `<div class="flex flex-col w-full">
+<h1 class="text-white font-bold text-1xl">Total price: $${son}</h1>
+<button class="py-1 px-3 bg-blue-500 text-white font-bold rounded-md">Go paymes</button>
+</div>`
+
+
 $("body").append(div,btn)
 }
 renderLocal()
@@ -171,7 +181,6 @@ getData("products").then((data) =>
 );
 
 $(".catagory").addEventListener("click", (e) => {
-  console.log();
   const path = e.target.dataset.path;
   if (path) {
     $(".products").innerHTML = "";
